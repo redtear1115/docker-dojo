@@ -1,0 +1,19 @@
+development: &development
+  host: db
+  # host: preparing.kdanmobile.com
+  port: 5432
+  adapter: postgresql
+  encoding: utf8
+  username: postgres
+  password: postgres-password-here
+  database: dojo_development
+  pool: 5
+  timeout: 5000
+
+test:
+  <<: *development
+  database: dojo_test
+
+production:
+  <<: *development
+  database: dojo_production
