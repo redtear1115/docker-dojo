@@ -1,6 +1,5 @@
 development: &development
   host: db
-  # host: preparing.kdanmobile.com
   port: 5432
   adapter: postgresql
   encoding: utf8
